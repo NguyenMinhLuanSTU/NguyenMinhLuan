@@ -75,17 +75,41 @@ html {
 /* Button style */
 
 .btn {
-    min-width: 125px;
-    height: 32px;
+    min-width: 110px;
+    height: 27px;
     text-decoration: none;
     border: none;
     border-radius: 2px;
     font-size: 1.1rem;
     padding: 0;
     align-items: center;
+    cursor: pointer;
+    outline: none;
+    color: var(--text-color);
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 12px;
+}
+
+.btn.btn--normal:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.btn.btn--size-s {
+    height: 21px;
+    font-size: 1.0rem;
+    padding: 0 8px;
 }
 
 .btn.btn--primary {
     color: var(--white-color);
     background-color: var(--primary-color);
+}
+
+.btn.btn--disabled {
+    cursor: default;
+    background-color: #c3c3c3;
+    color: #949494;
 }
