@@ -166,6 +166,7 @@ html {
     height: 27px;
     padding: 0 12px;
     border-radius: 2px;
+    box-shadow: 0 2px 4px #ccc;
     background-color: var(--white-color);
     display: flex;
     align-items: center;
@@ -199,6 +200,17 @@ html {
     padding: 5px 8px;
     list-style: none;
     display: none;
+    z-index: 1;
+    box-shadow: 0 1px 2px #e0e0e0;
+}
+
+.select-input__list::after {
+    content: "";
+    position: absolute;
+    top: -6px;
+    height: 7px;
+    width: 100%;
+    left: 0px;
 }
 
 .select-input__link {
@@ -211,4 +223,43 @@ html {
 
 .select-input__link:hover {
     color: var(--primary-color);
+}
+
+
+/* Pagination */
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.pagination-item {
+    margin: 0 5px;
+}
+
+.pagination-item--active .pagination-item__link {
+    box-shadow: -1px 2px 4px rgb(180, 179, 179);
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.pagination-item--active .pagination-item__link:hover {
+    background-color: #a1412e;
+    box-shadow: 0 2px 10px #ccc;
+}
+
+.pagination-item__link {
+    --height: 23px;
+    display: block;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #939393;
+    min-width: 30px;
+    height: var(--height);
+    line-height: var(--height);
+    text-align: center;
+    border-radius: 2px;
+    font-weight: 300;
 }
