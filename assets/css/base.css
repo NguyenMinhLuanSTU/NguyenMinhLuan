@@ -6,7 +6,7 @@
     --border-color: #dbdbdb;
     --star-gold-color: #ffce3d;
     --navbar-height: 34px;
-    --header-height: 110px;
+    --header-height: 145px;
     --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
     /* ~ */
 }
@@ -21,13 +21,14 @@ html {
     line-height: 1.6rem;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 
 /* Reponsive */
 
 .grid {
-    width: 1000px;
+    width: 1250px;
     max-width: 100%;
     margin: 0 auto;
 }
@@ -53,9 +54,9 @@ html {
 }
 
 .grid__column-2-4 {
-    padding-left: 5px;
+    padding-left: 9px;
     width: 20%;
-    padding-right: 5px;
+    padding-right: 1px;
 }
 
 .grid__column-10 {
@@ -119,11 +120,11 @@ html {
 
 .btn {
     min-width: 100px;
-    height: 27px;
+    height: 30px;
     text-decoration: none;
     border: none;
     border-radius: 2px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     padding: 0;
     align-items: center;
     cursor: pointer;
@@ -163,7 +164,7 @@ html {
 
 .select-input {
     min-width: 150px;
-    height: 27px;
+    height: 30px;
     padding: 0 12px;
     border-radius: 2px;
     box-shadow: 0 2px 4px #ccc;
@@ -194,7 +195,7 @@ html {
     position: absolute;
     left: 0;
     right: 0;
-    top: 18px;
+    top: 22px;
     border-radius: 2px;
     background-color: var(--white-color);
     padding: 5px 8px;
@@ -214,15 +215,19 @@ html {
 }
 
 .select-input__link {
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-decoration: none;
     color: var(--text-color);
     display: block;
     padding: 2.5px 0;
+    position: relative;
+    transition: right linear 0.1s;
+    right: 0;
 }
 
 .select-input__link:hover {
     color: var(--primary-color);
+    right: -4px;
 }
 
 
