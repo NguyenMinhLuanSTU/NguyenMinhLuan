@@ -1239,7 +1239,8 @@
     }
     
     .home-product__pagination {
-        margin: 48px 0 32px;
+        padding: 48px 0 32px;
+        margin: 0;
     }
     /* Footer */
     
