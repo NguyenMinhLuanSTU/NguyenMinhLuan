@@ -29,6 +29,7 @@ html {
 
 .grid {
     width: 1250px;
+    height: 858px;
     max-width: 100%;
     margin: 0 auto;
 }
@@ -267,4 +268,13 @@ html {
     text-align: center;
     border-radius: 2px;
     font-weight: 300;
+}
+
+
+/* Card */
+
+.mt8 {
+    margin: 8px 0 20px;
+    color: #38383d;
+    font-size: 1.3rem;
 }
