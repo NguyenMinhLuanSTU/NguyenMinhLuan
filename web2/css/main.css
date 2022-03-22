@@ -1,0 +1,103 @@
+/* --wp-admin-theme-color: #007cba;
+--wp-admin-theme-color-darker-10: #006ba1;
+--wp-admin-theme-color-darker-20: #005a87; */
+
+html {
+    box-sizing: border-box;
+    background: #020036;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container {
+    position: relative;
+    height: 52px;
+}
+
+#header {
+    padding-left: 13px;
+    padding-right: 8px;
+    left: -7px;
+    top: -7px;
+    position: absolute;
+    background-color: #273973;
+    right: -100vh;
+    padding-bottom: 17px;
+    padding-top: 18px;
+}
+
+.header-logo {
+    height: 50px;
+    max-height: 50px;
+    width: auto;
+}
+
+
+/* Content */
+
+.content {
+    margin-top: 70px;
+}
+
+.content__header-name {
+    font-family: 'Quicksand', sans-serif;
+    color: #14C8FA;
+    margin-left: 10px;
+}
+
+.content__body {
+    display: flex;
+    margin-top: 8px;
+}
+
+.content__span {
+    margin-left: 12px;
+    color: white;
+    min-width: 66px;
+}
+
+.content__input {
+    margin-left: 8px;
+    flex: 1;
+    min-height: 25px;
+    color: #000;
+}
+
+.btn {
+    position: relative;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px;
+    font-weight: bold;
+    color: #14C8FA;
+    background-color: #ccc;
+    font-size: 20px;
+    padding: 15px 20px;
+}
+
+.btn__modal {
+    display: none;
+    position: absolute;
+    width: 350px;
+    height: 186px;
+    background-color: #273973;
+    top: -209px;
+    left: -107px;
+}
+
+.click:focus .btn__modal {
+    display: flex;
+}
+
+.btn__modal-pagarghap {
+    position: absolute;
+    font-size: smaller;
+    top: 18px;
+    color: #14C8FA;
+}
+
+.footer {
+    margin: 20px 0 30px;
+    color: white;
+}
